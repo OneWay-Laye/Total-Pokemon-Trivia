@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text } from "react-native";
 
-export default function Feature_buttons({ title }) {
+export default function Feature_buttons({ title, ...props }) {
   return (
-    <View>
+    <Pressable {...props}>
       <Text>{title}</Text>
-    </View>
+    </Pressable>
   );
 }
 

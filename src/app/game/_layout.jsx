@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
 
-export default function PokedexLayout() {
+export default function GameLayout() {
   return <Stack />;
 }

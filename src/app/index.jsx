@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { Image, StyleSheet, Text, View } from "react-native";
 import Feature_buttons from "../components/feature_buttons";
 
@@ -14,12 +15,18 @@ export default function Index() {
       </View>
 
       <View style={styles.middleSection}>
-        <Feature_buttons title="Learn Basics"></Feature_buttons>
-        <Feature_buttons title={"Test Your Knowledge"}></Feature_buttons>
+        <Link href="/learn" asChild>
+          <Feature_buttons title="Learn Basics"></Feature_buttons>
+        </Link>
+        <Link href="/game" asChild>
+          <Feature_buttons title={"Test Your Knowledge"}></Feature_buttons>
+        </Link>
       </View>
 
       <View style={styles.bottomSection}>
-        <Feature_buttons title={"View Pokemon"}></Feature_buttons>
+        <Link href="/pokedex" asChild>
+          <Feature_buttons title={"View Pokemon"}></Feature_buttons>
+        </Link>
       </View>
     </View>
   );

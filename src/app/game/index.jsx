@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Pokedex() {
+export default function GameHome() {
   return (
     <View>
-      <Text>Pokedex Home</Text>
+      <Text>Game Home</Text>
     </View>
   );
 }
