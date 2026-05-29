@@ -15,17 +15,18 @@ export default function Index() {
       </View>
 
       <View style={styles.middleSection}>
-        <Link href="/learn" asChild>
+        <Link href="/learn" asChild style={styles.btn}>
           <Feature_buttons title="Learn Basics"></Feature_buttons>
         </Link>
-        <Link href="/game" asChild>
-          <Feature_buttons title={"Test Your Knowledge"}></Feature_buttons>
+
+        <Link href="/pokedex" asChild style={styles.btn}>
+          <Feature_buttons title={"View Pokemon"}></Feature_buttons>
         </Link>
       </View>
 
       <View style={styles.bottomSection}>
-        <Link href="/pokedex" asChild>
-          <Feature_buttons title={"View Pokemon"}></Feature_buttons>
+        <Link href="/game" asChild style={styles.btn}>
+          <Feature_buttons title={"Test Your Knowledge"} />
         </Link>
       </View>
     </View>
@@ -48,5 +49,10 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-evenly",
+  },
+  btn: {
+    backgroundColor: "#3B4CCA",
+    padding: 15,
+    borderRadius: 15,
   },
 });
